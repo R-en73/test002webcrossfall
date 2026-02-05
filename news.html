@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>クロスフォール News</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./img/ロゴ.png" alt="Logo_Cross fall">
+            </a>
+            <div class="control-group">
+                <div class="music-control">
+                    <button id="music-btn" class="music-btn">
+                        <span id="music-status">BGM: OFF</span>
+                    </button>
+                    <audio id="bgm" src="./audio/mainBGM.mp3" loop preload="auto"></audio>
+                </div>
+                <div class="icon_group">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <ion-icon name="logo-youtube" ></ion-icon>
+                    </a>
+                    <a href="https://x.com/home?lang=ja" target="_blank">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav class="overlay-nav" id="overlayNav">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./index.html#TOPICS">TOPICS</a></li>
+            <li><a href="./index.html#Story">STORY</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./character.html">CHARACTER</a></li>
+        </ul>
+    </nav>
+    <main class="news_main">
+        <section class="section_News">
+            <div class="News_container">
+                <h1>News</h1>
+            </div>
+        </section>
+
+        <div class="news_list_weapper">
+          <ul class="news_list">
+            <li class="news_list_item">
+              <a href="">
+                <div class="news_meta">
+                  <time class="news_date">2025.12.4</time>
+                  <span class="news_category">SPECIAL</span>
+                </div>
+                <h2 class="news_title">12月4日に学年企画Cチーム制作開始</h2>
+                <p class="news_text">卒業進級制作展制作開始現在制作中です。</p>
+              </a>
+            </li>
+            <li class="news_list_item">
+              <a href="">
+                <div class="news_meta">
+                  <time class="news_date">2025.12.18</time>
+                  <span class="news_category">SPECIAL</span>
+                </div>
+                <h2 class="news_title"></h2>
+                <p class="news_text">12月18日にワイヤーフレーム完成</p>
+              </a>
+            </li>
+            <li class="news_list_item">
+              <a href="">
+                <div class="news_meta">
+                  <time class="news_date">2025.12.18</time>
+                  <span class="news_category">SPECIAL</span>
+                </div>
+                <h2 class="news_title"></h2>
+                <p class="news_text">12月18日にWebサイト制作開始</p>
+              </a>
+            </li>
+            <li class="news_list_item">
+              <a href="">
+                <div class="news_meta">
+                  <time class="news_date">2026.01.08</time>
+                  <span class="news_category">SPECIAL</span>
+                </div>
+                <h2 class="news_title"></h2>
+                <p class="news_text">1月8日にゲーム名クロスフォールに決定</p>
+              </a>
+            </li>
+          </ul>
+          <ul class="news_list" id="news-list"></ul>
+
+          <div class="pagination" id="pagination"></div>
+          <div class="pagination" id="pagination"></div>
+    </div>
+    <footer>
+             <div class="marquee footer">
+                <div class="marquee__footer">
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+
+                    <!-- ループ -->
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <a href="./index.html">
+                    <img src="./img/ロゴ.png" alt="logo2">
+                </a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./index.html#TOPICS">Topics</a></li>
+                    <li><a href="./index.html#Story">Story</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="./character.html">Character</a></li>
+                </ul>
+            </div>
+            <p class="footer-copy">&copy; 2025 学年企画 Project Team C</p>
+        </footer>
+    </main>
+
+    <!-- 外部サイトからの挿入 -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/8bec611dcb.js" crossorigin="anonymous"></script> <!-- フォントオーサム -->
+
+    <!-- js -->
+    <script src="./News.js"></script>
+</body>
+</html>

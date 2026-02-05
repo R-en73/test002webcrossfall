@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="icon" href="./img/アイコン (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>クロスフォール</title>
+</head>
+<body>
+    <!-- GSAPスクロールアニメーション -->
+    <div class="text-reveal-container">
+        <h1 class="reveal-title">The best experience in fantasy</h1>
+        <p class="reveal-subtitle">最高の体験をファンタジーで</p>
+    </div>
+    <header>
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./img/ロゴ.png" alt="Logo_Cross fall">
+            </a>
+            <div class="control-group">
+                <div class="music-control">
+                    <button id="music-btn" class="music-btn">
+                        <span id="music-status">BGM: OFF</span>
+                    </button>
+                    <audio id="bgm" src="./audio/mainBGM.mp3" loop preload="auto"></audio>
+                </div>
+                <div class="icon_group">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <ion-icon name="logo-youtube" ></ion-icon>
+                    </a>
+                    <a href="https://x.com/home?lang=ja" target="_blank">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav class="overlay-nav" id="overlayNav">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="#TOPICS">TOPICS</a></li>
+            <li><a href="#Story">STORY</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./character.html">CHARACTER</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- カルーセル画像の切り替え部分 -->
+        <div class="swiper " >
+            <div class="swiper-wrapper">
+                <div class="swiper-slide is-main">
+                    <img src="./img/表紙縦.png" alt="スマホ用イラスト">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/ヒロイン.png" alt="イラスト1">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/横絵1 (1).PNG"   alt="イラスト2">
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="./img/学年企画_横イラスト_ライラベルベット (1).png" alt="イラスト3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/イラスト8 1.png" alt="イラスト4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/表紙01.png" alt="イラスト5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/表紙02.jpg" alt="イラスト6">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <!-- カルーセル画像の切り替え部分ここまで -->
+
+        <!-- NEWS -->
+        <section class="news-bar">
+            <div class="news-inner">
+                <span class="news-label">News</span>
+
+                <div class="news-view">
+                <ul class="news-track" id="newsTrack">
+                    <!-- JSで作成 -->
+                </ul>
+            </div>
+            <div class="news-nav">
+                <button id="prev">‹</button>
+                <button id="next">›</button>
+                </div>
+            </div>
+        </section>
+        <div class="news_h2"></div>
+        <!-- NEWSここまで -->
+
+        <!-- イラストをinfo部分 -->
+         <section class="parallax-bg">
+            <div class="marquee">
+                <div class="marquee__inner">
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+
+                    <!-- ループ -->
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                </div>
+            </div>
+            <section class="section2" id="TOPICS">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <img src="./img/学年企画_横イラスト_ライラベルベット (1).png" width="100%" alt="背景">
+                            <!-- <p>~お知らせ</p>
+                            <time>2025/00/00</time> -->
+                        </div>
+                        <div class="col">
+                            <img src="./img/表紙01.png" width="100%" height="100%" alt="背景">
+                            <!-- <p>~お知らせ</p>
+                            <time>2025/00/00</time> -->
+                        </div>
+                        <div class="col">
+                            <img src="./img/横絵1 (1).PNG" width="100%" height="103%" alt="背景">
+                            <!-- <p>~お知らせ</p>
+                            <time>2025/00/00</time> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <!-- 流れる帯 -->
+            <div class="marquee reverse">
+                <div class="marquee__inner">
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+
+
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                    <span>TOPICS</span>
+                </div>
+            </div>
+        </section>
+        <!-- イラストをTOPICS部分ここまで -->
+
+        <!-- ストーリー部分 -->
+        <section class="story" id="Story">
+            <div class="story-inner">
+                <!-- 左のテキスト -->
+                <div class="story-text">
+                    <span class="story-en">STORY</span>
+                    <h2>STORY</h2>
+                    <h3>境界のドアと異種の街</h3>
+                    <p class="story-body">
+                        高校に通うごく普通の少年。
+                        ある放課後、部室棟の奥にあるはずのない古いドアを見つける。
+                        不思議に思って開けた瞬間
+                        そこは魔物や妖怪、エルフたちが当たり前のように暮らす異世界 「クロスフォール」 だった。
+                        街の中には魔物が普通に歩き、妖怪が店番をし、エルフたちが魔法で灯りをともす。
+                        まるで異種族の交流都市のような場所。
+                        しかし、異世界の住民たちは困惑した表情で主人公を見る。
+                        「人間がこっちに来るなんて…ありえないはずだよ？」
+                        この世界では、人間はもう何十年も姿を見せていない失われた種族。
+                        主人公が来たことは、世界の均衡に関わる前兆とされていた。
+                        やがて主人公は気づく。
+                        自分が通ってきたドアは偶然ではなく、
+                        この世界に迫る異変を止めるために選ばれた「境界の鍵」だったことに。
+                        魔物に襲われる街、妖怪の見せる謎の影、エルフ族の森の消失……
+                        異界全体にゆっくりと迫る危機を前に、
+                        力を持たない普通の人間の主人公は、異種族たちと協力し事件の核心へと踏み込んでいく。
+                        鍵となるのは、現実世界と異世界をつなぐ唯一のドア。
+                    </p>
+                    <p class="story-catch">
+                        そのドアを開けることが<br class="sp_off">できるのは主人公だけだった。
+                    </p>
+                    <a href="./character.html" class="story-more">Character</a>
+                </div>
+                <!-- 右の画像 -->
+                <div class="story-images">
+                    <img src="./img/ライラ・ベルベット.png" alt="" class="sp_img">
+                </div>
+        </section>
+        <!-- ストーリー部分ここまで -->
+        <!-- PRODUCT部分 -->
+        <section class="PRODUCT">
+            <div class="PRODUCT-inner">
+                <span class="sub-title">SPEC</span>
+                <h2>PRODUCT</h2>
+                <div class="product-spec">
+                    <dl>
+                        <div class="spec-item">
+                            <dt>タイトル</dt>
+                            <dd>クロスフォール</dd>
+                        </div>
+                        <div class="spec-item">
+                            <dt>発売日</dt>
+                            <dd>発売未定</dd>
+                        </div>
+                        <div class="spec-item">
+                            <dt>ジャンル</dt>
+                            <dd>ノベルゲーム</dd>
+                        </div>
+                        <div class="spec-item">
+                            <dt>機種</dt>
+                            <dd>未定</dd>
+                        </div>
+                        <div class="spec-item">
+                            <dt>対応言語</dt>
+                            <dd>日本語・英語</dd>
+                        </div>
+                        <div class="spec-item">
+                            <dt>プレイ人数</dt>
+                            <dd>1人</dd>
+                        </div>
+                        <div class="spec-item">
+                            <dt>対象年齢</dt>
+                            <dd>12才以上対象</dd>
+                        </div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        </div>
+        <!-- PRODUCT部分ここまで -->
+
+        <footer>
+             <div class="marquee footer">
+                <div class="marquee__footer">
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+
+
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                    <span>Cross fall</span>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <a href="./index.html">
+                    <img src="./img/ロゴ.png" alt="logo2">
+                </a>
+            </div>
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#TOPICS">Topics</a></li>
+                    <li><a href="./news.html">News</a></li>
+                    <li><a href="#Story">Story</a></li>
+                    <li><a href="./character.html">Character</a></li>
+                </ul>
+            </div>
+            <p class="footer-copy">&copy; 2025 学年企画 Project Team C</p>
+        </footer>
+    </main>
+
+    <!--外部サイトから挿入したもの -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8bec611dcb.js" crossorigin="anonymous"></script> <!-- フォントオーサム -->
+
+    <!-- js -->
+    <script src="./script.js" ></script>
+
+</body>
+</html>
+
+
+
+<!-- stylecssじゃなくてscssに書く -->

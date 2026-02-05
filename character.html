@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="icon" href="./img/アイコン (1).png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>クロスフォール Character</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="./index.html" class="logo">
+                <img src="./img/ロゴ.png" alt="Logo_Cross fall">
+            </a>
+            <div class="control-group">
+                <div class="music-control">
+                    <button id="music-btn" class="music-btn">
+                        <span id="music-status">BGM: OFF</span>
+                    </button>
+                    <audio id="bgm" src="./audio/mainBGM.mp3" loop preload="auto"></audio>
+                </div>
+                <div class="icon_group">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <ion-icon name="logo-youtube" ></ion-icon>
+                    </a>
+                    <a href="https://x.com/home?lang=ja" target="_blank">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                    </a>
+                </div>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <nav class="overlay-nav" id="overlayNav">
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="index.html#TOPICS">TOPICS</a></li>
+            <li><a href="index.html#Story">STORY</a></li>
+            <li><a href="./news.html">NEWS</a></li>
+            <li><a href="./character.html">CHARACTER</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="character-section">
+            <div class="char-bg" id="char-bg"></div>
+
+            <div class="character-container">
+                <div class="char-nav-list">
+                    <ul id="char-list"></ul>
+                </div>
+
+                <div class="character-display">
+                    <div class="char-visual">
+                        <img alt="Character Image" id="char-img" class="char-img-element">
+                    </div>
+                     <!-- <div class="char-visual">
+                        <img src="./img/キャラ立ち絵.png" alt="Character Image" id="char-img" class="char-img-element">
+                    </div> -->
+                    <h1 class="character_nametop">キャラクター</h1>
+                    <div class="char-info">
+                        <p class="group-name" id="char-group">GROUP NAME</p>
+                        <h1 class="char-name">
+                            <span class="ja" id="char-name-ja">名前</span>
+                            <span class="en" id="char-name-en">NAME</span>
+                        </h1>
+                        <p class="cv">CV: <span id="char-cv">声優名</span></p>
+                        <div class="char-specs">
+                            <dl id="char-specs-list"></dl>
+                        </div>
+                        <div class="char-desc">
+                            <p id="char-desc-text">紹介文がここに入ります。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="marquee footer">
+            <div class="marquee__footer">
+                <span>Cross fall</span><span>Cross fall</span><span>Cross fall</span>
+                <span>Cross fall</span><span>Cross fall</span><span>Cross fall</span>
+                <span>Cross fall</span><span>Cross fall</span><span>Cross fall</span>
+                <span>Cross fall</span><span>Cross fall</span><span>Cross fall</span>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <a href="./index.html">
+                <img src="./img/ロゴ.png" alt="logo2">
+            </a>
+        </div>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#TOPICS">Topics</a></li>
+                <li><a href="./news.html">News</a></li>
+                <li><a href="./index.html#Story">Story</a></li>
+                <li><a href="./character.html">Character</a></li>
+            </ul>
+        </div>
+        <p class="footer-copy">&copy; 2025 学年企画 Project Team C</p>
+    </footer>
+
+    <!-- 外部サイトからの挿入 -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/8bec611dcb.js" crossorigin="anonymous"></script> <!-- フォントオーサム -->
+
+    <!-- jsリンク -->
+    <script src="./character.js"></script>
+</body>
+</html>
